@@ -2,8 +2,8 @@
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
 
-#define BLYNK_TEMPLATE_ID "TMPL6SqRK_Vw-"
-#define BLYNK_TEMPLATE_NAME "sunflower"
+#define BLYNK_TEMPLATE_ID "blynk-id"
+#define BLYNK_TEMPLATE_NAME "blynk-template-name"
 
 #define relay1 D3  
 #define relay2 D4  
@@ -22,9 +22,9 @@ DHT dht3(DHTPIN3, DHTTYPE);
 DHT dht4(DHTPIN4, DHTTYPE);
 
 // WiFi connection configuration
-char auth[] = "iyRMQPg9pCC1a6v_lKqaZ4EYQnQs8AUB"; //blynk auth
-char ssid[] = "construction"; //wifi ssid
-char password[] = "unavailable"; //wifi pass
+char auth[] = "blynk auth"; //blynk auth
+char ssid[] = "wifi ssid"; //wifi ssid
+char password[] = "wifi pass"; //wifi pass
 
 void setup() {
   Serial.begin(9600);
